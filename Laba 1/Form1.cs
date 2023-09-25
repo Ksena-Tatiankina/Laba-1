@@ -17,7 +17,12 @@ namespace Laba_1
         {
             InitializeComponent();
 
-            double result = Student.Add(3, 5);
+            
+        }
+
+        private void button_Enter_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
