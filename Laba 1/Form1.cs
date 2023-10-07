@@ -114,7 +114,6 @@ namespace Laba_1
                     if (currentID == List_Students[i].ID)
                     {
                         k = i;
-                        //MessageBox.Show(List_Students[k].GetStudentInf);
                         MessageBox.Show("ID: "+ List_Students[k].ID + ", ФИО: " + List_Students[k].FullName + ", Направление: " + List_Students[k].Major + ", Курс: " + +List_Students[k].CurrentCourse);
                         break;
                     }
