@@ -45,15 +45,17 @@ namespace Laba_1
             this.label8 = new System.Windows.Forms.Label();
             this.textBox_ID = new System.Windows.Forms.TextBox();
             this.button_Summer = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button_full_Inf = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(202, 18);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(180, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(173, 25);
+            this.label1.Size = new System.Drawing.Size(188, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Внесение данных";
             // 
@@ -140,10 +142,10 @@ namespace Laba_1
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(171, 418);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(180, 404);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(204, 25);
+            this.label6.Size = new System.Drawing.Size(222, 25);
             this.label6.TabIndex = 10;
             this.label6.Text = "Данные о студентах";
             // 
@@ -151,7 +153,7 @@ namespace Laba_1
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(55, 468);
+            this.label7.Location = new System.Drawing.Point(55, 453);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(198, 24);
             this.label7.TabIndex = 11;
@@ -159,7 +161,7 @@ namespace Laba_1
             // 
             // textBox_ID_Find
             // 
-            this.textBox_ID_Find.Location = new System.Drawing.Point(269, 468);
+            this.textBox_ID_Find.Location = new System.Drawing.Point(269, 453);
             this.textBox_ID_Find.Name = "textBox_ID_Find";
             this.textBox_ID_Find.Size = new System.Drawing.Size(223, 22);
             this.textBox_ID_Find.TabIndex = 12;
@@ -184,7 +186,7 @@ namespace Laba_1
             // button_Summer
             // 
             this.button_Summer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button_Summer.Location = new System.Drawing.Point(59, 521);
+            this.button_Summer.Location = new System.Drawing.Point(59, 544);
             this.button_Summer.Name = "button_Summer";
             this.button_Summer.Size = new System.Drawing.Size(257, 41);
             this.button_Summer.TabIndex = 15;
@@ -192,11 +194,35 @@ namespace Laba_1
             this.button_Summer.UseVisualStyleBackColor = true;
             this.button_Summer.Click += new System.EventHandler(this.button_Summer_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(59, 591);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(257, 41);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Закрыть зимнюю сессию";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button_full_Inf
+            // 
+            this.button_full_Inf.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_full_Inf.Location = new System.Drawing.Point(59, 497);
+            this.button_full_Inf.Name = "button_full_Inf";
+            this.button_full_Inf.Size = new System.Drawing.Size(257, 41);
+            this.button_full_Inf.TabIndex = 17;
+            this.button_full_Inf.Text = "Полная информация";
+            this.button_full_Inf.UseVisualStyleBackColor = true;
+            this.button_full_Inf.Click += new System.EventHandler(this.button_full_Inf_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(586, 758);
+            this.Controls.Add(this.button_full_Inf);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button_Summer);
             this.Controls.Add(this.textBox_ID);
             this.Controls.Add(this.label8);
@@ -238,6 +264,8 @@ namespace Laba_1
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox_ID;
         private System.Windows.Forms.Button button_Summer;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button_full_Inf;
     }
 }
 
