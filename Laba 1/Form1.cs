@@ -78,15 +78,18 @@ namespace Laba_1
                 MessageBox.Show("Введите ID студента");
             else
             {
+                if (numbers_students == 0)
+                    MessageBox.Show("ID не найдено");
                 for (int i = 0; i < numbers_students; i++)
                 {
+
                     if (currentID == List_Students[i].ID)
                     {
                         k = i;
                         List_Students[i].PassSession("Зимняя");
                         break;
                     }
-                    if (i == numbers_students)
+                    if (i == numbers_students - 1)
                     {
                         MessageBox.Show("ID не найдено");
                     }
@@ -111,6 +114,7 @@ namespace Laba_1
                     if (currentID == List_Students[i].ID)
                     {
                         k = i;
+                        //MessageBox.Show(List_Students[k].GetStudentInf);
                         MessageBox.Show("ID: "+ List_Students[k].ID + ", ФИО: " + List_Students[k].FullName + ", Направление: " + List_Students[k].Major + ", Курс: " + +List_Students[k].CurrentCourse);
                         break;
                     }
