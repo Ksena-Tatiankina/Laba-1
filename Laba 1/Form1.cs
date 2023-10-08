@@ -42,8 +42,6 @@ namespace Laba_1
 
                 MessageBox.Show("Данные внесены");
             }
-                
-            
         }
 
         private void button_Summer_Click(object sender, EventArgs e)
@@ -114,7 +112,36 @@ namespace Laba_1
                     if (currentID == List_Students[i].ID)
                     {
                         k = i;
-                        MessageBox.Show("ID: "+ List_Students[k].ID + ", ФИО: " + List_Students[k].FullName + ", Направление: " + List_Students[k].Major + ", Курс: " + +List_Students[k].CurrentCourse);
+                        MessageBox.Show(List_Students[k].GetStudentInf());
+                        //MessageBox.Show("ID: "+ List_Students[k].ID + ", ФИО: " + List_Students[k].FullName + ", Направление: " + List_Students[k].Major + ", Курс: " + +List_Students[k].CurrentCourse);
+                        break;
+                    }
+                    if (i == numbers_students - 1)
+                    {
+                        MessageBox.Show("ID не найдено");
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void button_FIO_Click(object sender, EventArgs e)
+        {
+            int currentID = Convert.ToInt32(textBox_ID_Find.Text);
+            int k = 0;
+            if (textBox_ID_Find.Text == "")
+                MessageBox.Show("Введите ID студента");
+            else
+            {
+                if (numbers_students == 0)
+                    MessageBox.Show("ID не найдено");
+
+                for (int i = 0; i < numbers_students; i++)
+                {
+                    if (currentID == List_Students[i].ID)
+                    {
+                        k = i;
+                        MessageBox.Show(List_Students[k].GetFullName());                        
                         break;
                     }
                     if (i == numbers_students - 1)

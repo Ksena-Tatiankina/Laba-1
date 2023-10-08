@@ -47,6 +47,7 @@ namespace Laba_1
             this.button_Summer = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button_full_Inf = new System.Windows.Forms.Button();
+            this.button_FIO = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -186,7 +187,7 @@ namespace Laba_1
             // button_Summer
             // 
             this.button_Summer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button_Summer.Location = new System.Drawing.Point(59, 544);
+            this.button_Summer.Location = new System.Drawing.Point(59, 591);
             this.button_Summer.Name = "button_Summer";
             this.button_Summer.Size = new System.Drawing.Size(257, 41);
             this.button_Summer.TabIndex = 15;
@@ -197,7 +198,7 @@ namespace Laba_1
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(59, 591);
+            this.button1.Location = new System.Drawing.Point(59, 638);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(257, 41);
             this.button1.TabIndex = 16;
@@ -216,11 +217,23 @@ namespace Laba_1
             this.button_full_Inf.UseVisualStyleBackColor = true;
             this.button_full_Inf.Click += new System.EventHandler(this.button_full_Inf_Click);
             // 
+            // button_FIO
+            // 
+            this.button_FIO.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_FIO.Location = new System.Drawing.Point(59, 544);
+            this.button_FIO.Name = "button_FIO";
+            this.button_FIO.Size = new System.Drawing.Size(257, 41);
+            this.button_FIO.TabIndex = 18;
+            this.button_FIO.Text = "Получить ФИО";
+            this.button_FIO.UseVisualStyleBackColor = true;
+            this.button_FIO.Click += new System.EventHandler(this.button_FIO_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(586, 758);
+            this.Controls.Add(this.button_FIO);
             this.Controls.Add(this.button_full_Inf);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button_Summer);
@@ -266,6 +279,7 @@ namespace Laba_1
         private System.Windows.Forms.Button button_Summer;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button_full_Inf;
+        private System.Windows.Forms.Button button_FIO;
     }
 }
 
