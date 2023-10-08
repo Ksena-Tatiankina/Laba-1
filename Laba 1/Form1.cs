@@ -47,31 +47,32 @@ namespace Laba_1
         private void button_Summer_Click(object sender, EventArgs e)
         {
             int currentID = Convert.ToInt32(textBox_ID_Find.Text);
-            int k = 0;
+            //int k = 0;
             if (textBox_ID_Find.Text == "")
                 MessageBox.Show("Введите ID студента");
             else
             {
+
                 for (int i = 0; i < numbers_students; i++)
                 {
                     if (currentID == List_Students[i].ID)
                     {
-                        k = i;
-                        List_Students[i].PassSession("Летняя");
+                        //k = i;
+                        MessageBox.Show(List_Students[i].PassSession("Летняя"));
                         break;
                     }
                 }
             }
-            if (List_Students[k].CurrentCourse <= 4)
-                MessageBox.Show("Студент " + List_Students[k].FullName + " переведен на " + Convert.ToString(List_Students[k].CurrentCourse) + " курс");
-            else
-                MessageBox.Show("Студент " + List_Students[k].FullName + " закончил университет");
+            //if (List_Students[k].CurrentCourse <= 4)
+                //MessageBox.Show("Студент " + List_Students[k].FullName + " переведен на " + Convert.ToString(List_Students[k].CurrentCourse) + " курс");
+           //else
+                //MessageBox.Show("Студент " + List_Students[k].FullName + " закончил университет");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             int currentID = Convert.ToInt32(textBox_ID_Find.Text);
-            int k = 0;
+            //int k = 0;
             if (textBox_ID_Find.Text == "")
                 MessageBox.Show("Введите ID студента");
             else
@@ -83,8 +84,8 @@ namespace Laba_1
 
                     if (currentID == List_Students[i].ID)
                     {
-                        k = i;
-                        List_Students[i].PassSession("Зимняя");
+                        //k = i;
+                        MessageBox.Show(List_Students[i].PassSession("Зимняя"));
                         break;
                     }
                     if (i == numbers_students - 1)
@@ -93,7 +94,7 @@ namespace Laba_1
                     }
                 }
             }
-            MessageBox.Show("Студент " + List_Students[k].FullName + "закрыл зимнюю сессию");
+            //MessageBox.Show("Студент " + List_Students[k].FullName + "закрыл зимнюю сессию");
         }
 
         private void button_full_Inf_Click(object sender, EventArgs e)
@@ -155,8 +156,7 @@ namespace Laba_1
 
         private void button_Credit_Click(object sender, EventArgs e)
         {
-            int currentID = Convert.ToInt32(textBox_ID_Find.Text);
-            //int k = 0;
+            int currentID = Convert.ToInt32(textBox_ID_Find.Text);            
             if (textBox_ID_Find.Text == "")
                 MessageBox.Show("Введите ID студента");
             else
@@ -168,8 +168,6 @@ namespace Laba_1
                 {
                     if (currentID == List_Students[i].ID)
                     {
-                        //k = i;
-                        //List_Students[i].Dedact();
                         MessageBox.Show(List_Students[i].Dedact());
                         break;
                     }
@@ -180,6 +178,40 @@ namespace Laba_1
                     }
                 }
             }
+        }
+
+        private void button_transfer_Click(object sender, EventArgs e)
+        {
+            int currentID = Convert.ToInt32(textBox_ID_Find.Text);
+            if (textBox_ID_Find.Text == "")
+            {
+                MessageBox.Show("Введите ID студента");
+            }
+            else
+            {
+                if (textBox_transfer.Text == " ")
+                    MessageBox.Show("Введите направление для перевода");
+                else
+                {
+                    if (numbers_students == 0)
+                        MessageBox.Show("ID не найдено");
+
+                    for (int i = 0; i < numbers_students; i++)
+                    {
+                        if (currentID == List_Students[i].ID)
+                        {
+                            MessageBox.Show(List_Students[i].ChangeMajor(textBox_transfer.Text));
+                            break;
+                        }
+                        if (i == numbers_students - 1)
+                        {
+                            MessageBox.Show("ID не найдено");
+                            break;
+                        }
+                    }
+                }
+            }
+            textBox_transfer.Clear();
         }
     }
 }

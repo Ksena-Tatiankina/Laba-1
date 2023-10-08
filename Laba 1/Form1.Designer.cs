@@ -49,6 +49,10 @@ namespace Laba_1
             this.button_full_Inf = new System.Windows.Forms.Button();
             this.button_FIO = new System.Windows.Forms.Button();
             this.button_Credit = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox_transfer = new System.Windows.Forms.TextBox();
+            this.button_transfer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -73,6 +77,7 @@ namespace Laba_1
             // 
             // textBox_Name
             // 
+            this.textBox_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_Name.Location = new System.Drawing.Point(207, 102);
             this.textBox_Name.Multiline = true;
             this.textBox_Name.Name = "textBox_Name";
@@ -91,9 +96,10 @@ namespace Laba_1
             // 
             // textBox_major
             // 
+            this.textBox_major.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_major.Location = new System.Drawing.Point(207, 155);
             this.textBox_major.Name = "textBox_major";
-            this.textBox_major.Size = new System.Drawing.Size(279, 22);
+            this.textBox_major.Size = new System.Drawing.Size(279, 24);
             this.textBox_major.TabIndex = 4;
             // 
             // label4
@@ -108,9 +114,10 @@ namespace Laba_1
             // 
             // textBox_year
             // 
+            this.textBox_year.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_year.Location = new System.Drawing.Point(207, 195);
             this.textBox_year.Name = "textBox_year";
-            this.textBox_year.Size = new System.Drawing.Size(279, 22);
+            this.textBox_year.Size = new System.Drawing.Size(279, 24);
             this.textBox_year.TabIndex = 6;
             // 
             // label5
@@ -125,9 +132,10 @@ namespace Laba_1
             // 
             // textBox_course
             // 
+            this.textBox_course.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_course.Location = new System.Drawing.Point(207, 238);
             this.textBox_course.Name = "textBox_course";
-            this.textBox_course.Size = new System.Drawing.Size(279, 22);
+            this.textBox_course.Size = new System.Drawing.Size(279, 24);
             this.textBox_course.TabIndex = 8;
             // 
             // button_Enter
@@ -163,9 +171,10 @@ namespace Laba_1
             // 
             // textBox_ID_Find
             // 
+            this.textBox_ID_Find.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_ID_Find.Location = new System.Drawing.Point(266, 399);
             this.textBox_ID_Find.Name = "textBox_ID_Find";
-            this.textBox_ID_Find.Size = new System.Drawing.Size(223, 22);
+            this.textBox_ID_Find.Size = new System.Drawing.Size(223, 24);
             this.textBox_ID_Find.TabIndex = 12;
             // 
             // label8
@@ -180,9 +189,10 @@ namespace Laba_1
             // 
             // textBox_ID
             // 
+            this.textBox_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox_ID.Location = new System.Drawing.Point(207, 64);
             this.textBox_ID.Name = "textBox_ID";
-            this.textBox_ID.Size = new System.Drawing.Size(279, 22);
+            this.textBox_ID.Size = new System.Drawing.Size(279, 24);
             this.textBox_ID.TabIndex = 14;
             // 
             // button_Summer
@@ -190,7 +200,7 @@ namespace Laba_1
             this.button_Summer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button_Summer.Location = new System.Drawing.Point(281, 443);
             this.button_Summer.Name = "button_Summer";
-            this.button_Summer.Size = new System.Drawing.Size(250, 41);
+            this.button_Summer.Size = new System.Drawing.Size(261, 41);
             this.button_Summer.TabIndex = 15;
             this.button_Summer.Text = "Закрыть летнюю сессию";
             this.button_Summer.UseVisualStyleBackColor = true;
@@ -201,7 +211,7 @@ namespace Laba_1
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.Location = new System.Drawing.Point(281, 490);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(250, 41);
+            this.button1.Size = new System.Drawing.Size(261, 41);
             this.button1.TabIndex = 16;
             this.button1.Text = "Закрыть зимнюю сессию";
             this.button1.UseVisualStyleBackColor = true;
@@ -240,11 +250,54 @@ namespace Laba_1
             this.button_Credit.UseVisualStyleBackColor = true;
             this.button_Credit.Click += new System.EventHandler(this.button_Credit_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(74, 603);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(439, 25);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Перевод студента на другое направление";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(55, 649);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(135, 24);
+            this.label10.TabIndex = 21;
+            this.label10.Text = "Направление:";
+            // 
+            // textBox_transfer
+            // 
+            this.textBox_transfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox_transfer.Location = new System.Drawing.Point(207, 650);
+            this.textBox_transfer.Name = "textBox_transfer";
+            this.textBox_transfer.Size = new System.Drawing.Size(324, 24);
+            this.textBox_transfer.TabIndex = 22;
+            // 
+            // button_transfer
+            // 
+            this.button_transfer.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_transfer.Location = new System.Drawing.Point(170, 697);
+            this.button_transfer.Name = "button_transfer";
+            this.button_transfer.Size = new System.Drawing.Size(207, 40);
+            this.button_transfer.TabIndex = 23;
+            this.button_transfer.Text = "Перевести";
+            this.button_transfer.UseVisualStyleBackColor = true;
+            this.button_transfer.Click += new System.EventHandler(this.button_transfer_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 758);
+            this.ClientSize = new System.Drawing.Size(594, 758);
+            this.Controls.Add(this.button_transfer);
+            this.Controls.Add(this.textBox_transfer);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.button_Credit);
             this.Controls.Add(this.button_FIO);
             this.Controls.Add(this.button_full_Inf);
@@ -294,6 +347,10 @@ namespace Laba_1
         private System.Windows.Forms.Button button_full_Inf;
         private System.Windows.Forms.Button button_FIO;
         private System.Windows.Forms.Button button_Credit;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox_transfer;
+        private System.Windows.Forms.Button button_transfer;
     }
 }
 
