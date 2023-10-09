@@ -50,11 +50,12 @@ namespace Laba_1
         //закрытие летней сессии
         private void button_Summer_Click(object sender, EventArgs e)
         {
-            int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
+            //int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
             if (textBox_ID_Find.Text == "")
                 MessageBox.Show("Введите ID студента");
             else
             {
+                int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
                 //поиск студента по id
                 for (int i = 0; i < numbers_students; i++)
                 {
@@ -63,6 +64,10 @@ namespace Laba_1
                         MessageBox.Show(List_Students[i].PassSession("Летняя")); //вызов метода
                         break;
                     }
+                    if (i == numbers_students - 1)
+                    {
+                        MessageBox.Show("ID не найдено");
+                    }
                 }
             }            
         }
@@ -70,11 +75,12 @@ namespace Laba_1
         //закрытие зимней сессии
         private void button1_Click(object sender, EventArgs e)
         {
-            int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
+            //int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
             if (textBox_ID_Find.Text == "")
                 MessageBox.Show("Введите ID студента");
             else
             {
+                int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
                 if (numbers_students == 0)
                     MessageBox.Show("ID не найдено");
                 //поиск студента по id
@@ -96,11 +102,12 @@ namespace Laba_1
         //получение полной информации
         private void button_full_Inf_Click(object sender, EventArgs e)
         {
-            int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
+            //int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
             if (textBox_ID_Find.Text == "")
                 MessageBox.Show("Введите ID студента");
             else
             {
+                int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
                 if (numbers_students == 0)
                     MessageBox.Show("ID не найдено");
                 //поиск студента по id
@@ -123,11 +130,12 @@ namespace Laba_1
         //получение ФИО
         private void button_FIO_Click(object sender, EventArgs e)
         {
-            int currentID = Convert.ToInt32(textBox_ID_Find.Text);
+            //int currentID = Convert.ToInt32(textBox_ID_Find.Text);
             if (textBox_ID_Find.Text == "")
                 MessageBox.Show("Введите ID студента");
             else
             {
+                int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
                 if (numbers_students == 0)
                     MessageBox.Show("ID не найдено");
 
@@ -150,11 +158,12 @@ namespace Laba_1
         //отчисление студента
         private void button_Credit_Click(object sender, EventArgs e)
         {
-            int currentID = Convert.ToInt32(textBox_ID_Find.Text);            
+            //int currentID = Convert.ToInt32(textBox_ID_Find.Text);            
             if (textBox_ID_Find.Text == "")
                 MessageBox.Show("Введите ID студента");
             else
             {
+                int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
                 if (numbers_students == 0)
                     MessageBox.Show("ID не найдено");
 
@@ -177,7 +186,7 @@ namespace Laba_1
         //перевод студента
         private void button_transfer_Click(object sender, EventArgs e)
         {
-            int currentID = Convert.ToInt32(textBox_ID_Find.Text);
+            //int currentID = Convert.ToInt32(textBox_ID_Find.Text);
             if (textBox_ID_Find.Text == "")
             {
                 MessageBox.Show("Введите ID студента");
@@ -189,6 +198,7 @@ namespace Laba_1
                     MessageBox.Show("Введите направление для перевода");
                 else
                 {
+                    int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
                     if (numbers_students == 0)
                         MessageBox.Show("ID не найдено");
 
