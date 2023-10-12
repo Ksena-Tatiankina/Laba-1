@@ -75,24 +75,6 @@ namespace Laba_1
                 }
                 else
                     MessageBox.Show("Неверный формат значения 'ID'");
-
-                //добавление нового студента
-                //int id = Convert.ToInt32(textBox_ID.Text);
-                //int year = Convert.ToInt32(textBox_year.Text);
-                //int course = Convert.ToInt32(textBox_course.Text);
-
-                //List_Students.Add(new Student(id, textBox_Name.Text, textBox_major.Text, year, course));
-                /*
-                numbers_students++;
-
-                textBox_ID.Clear();
-                textBox_Name.Clear();
-                textBox_major.Clear();
-                textBox_year.Clear();
-                textBox_course.Clear();
-
-                MessageBox.Show("Данные внесены");
-                */
             }
         }
 
@@ -103,7 +85,6 @@ namespace Laba_1
                 MessageBox.Show("Введите ID студента");
             else
             {
-                //int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
                 //поиск студента по id
                 if (int.TryParse(textBox_ID_Find.Text, out int currentID))
                 {
@@ -132,7 +113,6 @@ namespace Laba_1
                 MessageBox.Show("Введите ID студента");
             else
             {
-                //int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
                 if (int.TryParse(textBox_ID_Find.Text, out int currentID))
                 {
                     if (numbers_students == 0)
@@ -163,18 +143,6 @@ namespace Laba_1
                 MessageBox.Show("Введите ID студента");
             else
             {
-                /*                 
-                int currentID = 0;
-                try
-                {
-                    currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
-                }
-                catch (FormatException)
-                {
-                    MessageBox.Show("Неверный формат ID");
-                }
-                */
-
                 if (int.TryParse(textBox_ID_Find.Text, out int currentID))
                 {
                     if (numbers_students == 0)
@@ -196,25 +164,6 @@ namespace Laba_1
                 }
                 else
                     MessageBox.Show("Неверный формат ID");
-
-                /*
-                //int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
-                if (numbers_students == 0)
-                    MessageBox.Show("ID не найдено");
-                //поиск студента по id
-                for (int i = 0; i < numbers_students; i++)
-                {                    
-                    if (currentID == List_Students[i].ID)
-                    {
-                        MessageBox.Show(List_Students[i].GetStudentInf()); //вызов метода                       
-                        break;
-                    }
-                    if (i == numbers_students - 1)
-                    {
-                        MessageBox.Show("ID не найдено");
-                        break;
-                    }
-                }       */
             }
         }
 
@@ -225,7 +174,6 @@ namespace Laba_1
                 MessageBox.Show("Введите ID студента");
             else
             {
-                //int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
                 if (int.TryParse(textBox_ID_Find.Text, out int currentID))
                 {
                     if (numbers_students == 0)
@@ -257,7 +205,6 @@ namespace Laba_1
                 MessageBox.Show("Введите ID студента");
             else
             {
-                //int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
                 if (int.TryParse(textBox_ID_Find.Text, out int currentID))
                 {
                     if (numbers_students == 0)
@@ -296,7 +243,6 @@ namespace Laba_1
                     MessageBox.Show("Введите направление для перевода");
                 else
                 {
-                    //int currentID = Convert.ToInt32(textBox_ID_Find.Text); //запись текущего id
                     if (int.TryParse(textBox_ID_Find.Text, out int currentID))
                     {
                         if (numbers_students == 0)
